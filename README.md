@@ -6,7 +6,7 @@ You can change the variable PATH's directory to make it suitable for your own Gr
 
 ## dependency
 
-`ncursors`
+`ncurses`
 
 Make sure that the user have permission to read and write access to brightness under PATH. You can follow the <a href="https://wiki.archlinux.org/index.php/Backlight#ACPI" >Arch Wiki</a> instrustion to do that.
 
