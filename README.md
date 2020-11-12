@@ -1,6 +1,6 @@
 # backlight controller
 
-Use TUI(ncursors) to control intel Graphic Card.
+Use TUI(based on ncurses) to control intel Graphic Card.
 
 You can change the variable PATH's directory to make it suitable for your own Graphic Card.
 
