@@ -30,4 +30,4 @@ to start. You can also add the symbol link into `$PATH`.
 
 ## keybindings
 
-default keybindings of brighter is `<ScrollWheelUp>`(achieved by 'A') and `l`, and darker is `<ScrollWheelDown>`(achieved by 'B') and `h`. You easily change the keybindings through source code.
+default keybindings of brighter is `<ScrollWheelUp>`(achieved by 'A') and `k`, and darker is `<ScrollWheelDown>`(achieved by 'B') and `j`. You easily change the keybindings through source code.
