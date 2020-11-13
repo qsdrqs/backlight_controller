@@ -1,14 +1,14 @@
 # backlight controller
 
-Use TUI(based on ncurses) to control intel Graphic Card.
+Use TUI(based on ncurses) to control intel Graphic Card in linux (tested through ArchLinux)
 
-You can change the variable PATH's directory to make it suitable for your own Graphic Card.
+**You need to change the variable PATH's directory to make it suitable for your own Graphic Card.**
 
 ## dependency
 
 `ncurses`
 
-Make sure that the user have permission to read and write access to brightness under PATH. You can follow the <a href="https://wiki.archlinux.org/index.php/Backlight#ACPI" >Arch Wiki</a> instrustion to do that.
+***Make sure that the user have permission to read and write access to brightness under PATH otherwise you will get a `segmentation fault (core dumped)`.*** You can follow the <a href="https://wiki.archlinux.org/index.php/Backlight#ACPI" >Arch Wiki</a> instrustion to do that.
 
 ## build & run
 
