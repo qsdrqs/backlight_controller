@@ -8,7 +8,7 @@ Use TUI(based on ncurses) to control intel Graphic Card in linux (tested through
 
 `ncurses`
 
-***Make sure that the user have permission to read and write access to brightness under PATH otherwise you will get a `segmentation fault (core dumped)`.*** You can follow the <a href="https://wiki.archlinux.org/index.php/Backlight#ACPI" >Arch Wiki</a> instrustion to do that.
+***Make sure that the user have permission of reading and writing access to brightness under PATH otherwise you will get a `segmentation fault (core dumped)`.*** You can follow the <a href="https://wiki.archlinux.org/index.php/Backlight#ACPI" >Arch Wiki</a> instruction to do that. You can also use `sudo` to run it.(NOT RECOMMENDED)
 
 ## build & run
 
