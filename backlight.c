@@ -46,14 +46,30 @@ int main(int argc, char* argv[])
 {
     char bright_path[60] = PATH;
     FILE* bright_file = fopen(strcat(bright_path, "/brightness"), "r+");
+    if (bright_file == NULL) {
+        perror("can't open brightness file");
+        return 1;
+    }
     char buffer[20];
-    fread(&buffer, 1, 20, bright_file);
+    int result = fread(&buffer, 1, 20, bright_file);
+    if (result == 0) {
+        perror("read error");
+        return 1;
+    }
     int light = atoi(buffer);
 
     char max_path[60] = PATH;
     FILE* max_file = fopen(strcat(max_path, "/max_brightness"), "r");
+    if (max_file == NULL) {
+        perror("can't open max_brightness file");
+        return 1;
+    }
     char buffer_max[20];
-    fread(&buffer_max, 1, 20, max_file);
+    result = fread(&buffer_max, 1, 20, max_file);
+    if (result == 0) {
+        printf("read error");
+        return 1;
+    }
     max_light = atoi(buffer_max);
 
     char operater;

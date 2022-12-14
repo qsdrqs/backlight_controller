@@ -12,11 +12,11 @@ TARGET  := backlight
 #compile and lib parameter
 
 CC      := gcc
-LIBS    := curses
+LIBS    := -lncurses -ltinfo
 LDFLAGS :=
 DEFINES :=
 INCLUDE := -I.
-CFLAGS  := -g -Wall -O2 $(DEFINES) $(INCLUDE)
+CFLAGS  := -g -Wall -O0 $(DEFINES) $(INCLUDE)
 CXXFLAGS:= $(CFLAGS) -DHAVE_CONFIG_H
 
 
@@ -38,4 +38,4 @@ clean :
 	rm -fr $(TARGET)
 
 $(TARGET) : $(OBJS)
-	$(CC) $(CXXFLAGS) -o $@ $(OBJS) $(LDFLAGS) -l $(LIBS)
+	$(CC) $(CXXFLAGS) -o $@ $(OBJS) $(LDFLAGS) $(LIBS)

@@ -1,3 +1,5 @@
 backlight
 backlight.o
 .tasks
+
+.vimspector.json

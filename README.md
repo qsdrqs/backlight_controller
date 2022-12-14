@@ -2,7 +2,7 @@
 
 Use TUI(based on ncurses) to control intel Graphic Card in linux (tested through ArchLinux)
 
-**You need to change the variable PATH's directory to make it suitable for your own Graphic Card.**
+**You need to specify PATH's directory by changing `PATH` variable in `backlight.c` to make it suitable for your own Graphic Card.**
 
 ## dependency
 
